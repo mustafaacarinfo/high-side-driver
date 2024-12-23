@@ -1,0 +1,10 @@
+# Geçici dosyalar
+*.log
+*.tmp
+
+# Derleme çıktıları
+/build/
+/dist/
+
+# Çevresel dosyalar
+.env

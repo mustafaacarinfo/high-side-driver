@@ -1,10 +1,12 @@
 # Compiler and flags
 CXX = g++
-CXXFLAGS = -Wall -Wextra -std=c++17
+CXXFLAGS = -Wall -Wextra -std=c++17 -Iinclude -Iinclude/hss
 
-# Project structure
+# Directories
 SRC_DIR = src
 BUILD_DIR = build
+
+# Output binary
 TARGET = $(BUILD_DIR)/main
 
 # Source files and object files
@@ -34,4 +36,3 @@ run: $(TARGET)
 
 # Phony targets
 .PHONY: all clean run
-

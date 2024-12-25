@@ -1,7 +1,7 @@
-#ifndef HSS_TYPES_HPP
-#define HSS_TYPES_HPP
+#ifndef HSD_TYPES_HPP
+#define HSD_TYPES_HPP
 
-namespace hss {
+namespace hsd {
 
 /**
  * @brief Diagnostic status for High-Side Switch

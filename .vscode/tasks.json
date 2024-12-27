@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "/usr/bin/g++",
+            "args": [
+                "-g",                                     // Debug sembolleri
+                "-I", "${workspaceFolder}/include",      // Genel include klasörü
+                "-I", "${workspaceFolder}/include/hsd",  // HSD alt klasörü
+                "${workspaceFolder}/src/*.cpp",          // Tüm src altındaki .cpp dosyaları
+                "-o", "${workspaceFolder}/build/main"    // Çıktı dosyası
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Generik C++ derleme task'ı"
+        }
+    ]
+}

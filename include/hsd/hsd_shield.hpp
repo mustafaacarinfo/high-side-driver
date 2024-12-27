@@ -10,7 +10,7 @@ namespace hsd
     class HsdShield
     {
         public:
-            //~HsdShield();
+            //virtual HsdShield(); /* TODO */
 
             virtual hsd::DiagStatus_t readDiagx(uint8_t index) = 0;
             

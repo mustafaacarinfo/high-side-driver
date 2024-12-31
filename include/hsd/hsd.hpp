@@ -2,6 +2,7 @@
 #define HSD_HPP
 
 #include "hsd_types.hpp"
+#include <iostream>
 
 namespace hsd
 {
@@ -9,13 +10,11 @@ namespace hsd
 class Hsd
 {
     public:
-        ~Hsd() {}
-
-        hsd::DiagStatus_t diagRead(float current);
+       // virtual ~Hsd() {};
+        virtual   DiagStatus_t  readDiagx (uint8_t index) = 0;
+        virtual   float readCurrent (uint8_t index) = 0;
         
-        float readIs(float rSense);
-        
-        hsd::SwitchStatus_t getSwitchStatus();
+        //virtual hsd::SwitchStatus_t getSwitchStatus();
     };
 
 }

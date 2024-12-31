@@ -1,10 +1,7 @@
 #ifndef VARIANTS_HPP
 #define VARIANTS_HPP
 
-
-
 #include <cstdint>
-
 
 struct BtxVariants_t 
 {
